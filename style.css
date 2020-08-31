@@ -1,0 +1,54 @@
+body {
+    background-color: rgb(44, 44, 44);
+}
+nav {
+    border-bottom:solid grey 0.2rem;
+}
+#container {
+    background-color: grey;
+}
+
+h2 {
+    color:white;
+}
+
+#logo {
+    height: 2rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.btn {
+    align-items: flex-end;
+}
+
+.white-font {
+    color: white;
+}
+
+.card {
+    padding : 0;
+    background-color:grey;
+}
+
+.card-body {
+    padding : 0;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.pad {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.input {
+    width:100%;
+}
+
+.tableau {
+    text-align: center;
+    border: solid 1px white;
+}

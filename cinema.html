@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>CineNath</title>
+</head>
+
+<body>
+  <!-- MENU -->
+  <nav id="container" class="container-fluid navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img id="logo" src="images/logo.png" alt="Logo du site"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">A l'affiche</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Adresse</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CAROUSEL -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/cinema.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/cinema2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/cinema3.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- FILMS -->
+  <div class="container">
+    <div id="section1" class="row pad">
+      <div class="col-12">
+        <h2 class="title"> Films à l'affiche </h2>
+      </div>
+    </div>
+    <div class="row pad justify-content-between">
+      <div class="col-3 card">
+        <img src="images/hapiness_therapy.jpg" class="card-img-top" alt="Affiche hapiness therapy">
+        <div class="card-body white-font">
+          <h5 class="card-title">Hapiness Therapy</h5>
+          <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#hapiness-therapy">En savoir plus</a>
+        </div>
+      </div>
+      <div class="col-3 card white-font">
+        <img src="images/la_la_land.jpg" class="card-img-top" alt="Affiche la la land">
+        <div class="card-body">
+          <h5 class="card-title">La La Land</h5>
+          <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#la-la-land">En savoir plus</a>
+        </div>
+      </div>
+      <div class="col-3 card white-font">
+        <img src="images/crazy_stupid_love.jpg" class="card-img-top" alt="Affiche crazy stupid love">
+        <div class="card-body">
+          <h5 class="card-title">Crazy Stupid Love</h5>
+          <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#crazy-stupid-love">En savoir plus</a>
+        </div>
+      </div>
+      <!--MODALS-->
+      <div class="modal fade" id="hapiness-therapy" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Hapiness Therapy</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              La vie réserve parfois quelques surprises…
+              Pat Solatano a tout perdu : sa maison, son travail et sa femme. Il se retrouve même dans l’obligation
+              d’emménager chez ses parents.
+              Malgré tout, Pat affiche un optimisme à toute épreuve et est déterminé à se reconstruire et à renouer avec
+              son ex-femme.
+              Rapidement, il rencontre Tiffany, une jolie jeune femme ayant eu un parcours mouvementé. Tiffany se
+              propose d’aider Pat à reconquérir sa femme, à condition qu’il lui rende un service en retour. Un lien
+              inattendu commence à se former entre eux et, ensemble, ils vont essayer de reprendre en main leurs vies
+              respectives.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              <a href="https://www.youtube.com/watch?v=9KIqvwcc1e0" type="button" class="btn btn-primary">Voir la
+                bande-annonce</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="la-la-land" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">La La Land</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Au cœur de Los Angeles, une actrice en devenir prénommée Mia sert des cafés entre deux auditions.
+              De son côté, Sebastian, passionné de jazz, joue du piano dans des clubs miteux pour assurer sa
+              subsistance.
+              Tous deux sont bien loin de la vie rêvée à laquelle ils aspirent…
+              Le destin va réunir ces doux rêveurs, mais leur coup de foudre résistera-t-il aux tentations, aux
+              déceptions, et à la vie trépidante d’Hollywood ?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              <a href="https://www.youtube.com/watch?v=djoFKskdBZc" type="button" class="btn btn-danger">Voir la
+                bande-annonce</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="crazy-stupid-love" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Crazy Stupid Love</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              A tout juste quarante ans, Cal Weaver mène une vie de rêve - bonne situation, belle maison, enfants
+              formidables et mariage parfait avec sa petite amie du lycée. Mais lorsqu’il apprend que sa femme, Emily,
+              le trompe et demande le divorce, sa vie « parfaite » s’écroule. Pire, dans le monde des célibataires
+              d’aujourd’hui, Cal, qui n’a plus dragué depuis des lustres, se révèle un modèle d’anti séduction. Passant
+              désormais ses soirées à bouder tout seul au bar du coin, l’infortuné Cal est pris en main comme complice
+              et protégé d’un séduisant trentenaire, Jacob Palmer. Pour l’aider à oublier sa femme et à commencer une
+              nouvelle vie, Jacob tente de faire découvrir à Cal les nombreuses perspectives qui s’offrent à lui :
+              femmes en quête d’aventures, soirées arrosées entre copains et un chic supérieur à la moyenne.
+              Cal et Emily ne sont pas les seuls en quête d’amour: le fils de Cal, Robbie, 13 ans, est fou de sa
+              babysitter de 17 ans, Jessica, laquelle a jeté son dévolu… sur Cal ! Et en dépit de la transformation de
+              Cal et de ses nombreuses nouvelles conquêtes, la seule chose qu’il ne peut changer reste son coeur, qui
+              semble toujours le ramener à son point de départ.
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+              <a href="https://www.youtube.com/watch?v=mMsdIVk1h3s" type="button" class="btn btn-danger">Voir la
+                bande-annonce</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="section1" class="row pad">
+      <div class="col-12">
+        <h2 class="title"> Informations pratiques </h2>
+      </div>
+    </div>
+    <div class="row justify-content-around">
+    <div class="text-center white-font">
+      <div>
+        <h3>
+          AVANTAGES CINEMA
+        </h3>
+      </div>
+      <div class="">
+        <p>Salle climatisée</p>
+        <p>Toutes les salles en IMAX</p>
+        <p>Son Digital Prologic Surround</p>
+      </div>
+    </div>
+      <table class="tableau col-5 white-font">
+        <tr>
+          <td rowspan="2" style="visibility: hidden;;">
+            <p> col1 Ligne1 </p>
+          </td>
+          <td colspan="2" class="border-left">
+            <p> LUNDI AU VENDREDI </p>
+          </td>
+          <td rowspan="2">
+            <p> WEEK-END </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-left">
+            <p> De 9h à 18h </p>
+          </td>
+          <td>
+            <p> Soirée </p>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-top">
+            <p> - 14 ans </p>
+          </td>
+          <td>
+            <p> 5 € </p>
+          </td>
+          <td>
+            <p> 6 € </p>
+          </td>
+          <td>
+            <p> 6 € </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <p> Plein tarif </p>
+          </td>
+          <td>
+            <p> 10 € </p>
+          </td>
+          <td>
+            <p> 12 € </p>
+          </td>
+          <td>
+            <p> 12,50 € </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- ADRESSE -->
+  <div id="section2" class="row pad justify-content-center">
+    <h2> Notre adresse </h2>
+  </div>
+  <div class="white-font row adresse justify-content-center">
+    <p>Adresse : Quelque part</p>
+  </div>
+  <div class="white-font row adresse justify-content-center">
+    <p>Téléphone : XX XX XX XX XX</p>
+  </div>
+  <div class="row pad justify-content-around ">
+    <iframe class="col-5 embed-responsive"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2084.084787626087!2d-110.84015744663238!3d44.52485818021387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDTCsDMxJzMwLjIiTiAxMTDCsDUwJzE3LjUiVw!5e1!3m2!1sfr!2sfr!4v1598276498444!5m2!1sfr!2sfr"
+      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+  </div>
+  <div id="section3" class="row pad justify-content-center">
+    <h2>Contactez-nous</h2>
+  </div>
+  <form class="container">
+    <div class="row justify-content-around form-group">
+      <input class="col-5" type="name" placeholder="Nom">
+      <input class="col-5" type="name" placeholder="Prénom">
+    </div>
+    <div class="row justify-content-around form-group">
+      <input class="col-5" placeholder="E-mail">
+      <input class="col-5" placeholder="Téléphone">
+    </div>
+    <div class="row  justify-content-around form-group">
+      <input class="col-11" placeholder="Sujet">
+    </div>
+    <div class="row  justify-content-around form-group">
+      <input class="col-11" placeholder="Message">
+    </div>
+  </form>
+  </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
